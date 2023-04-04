@@ -1,0 +1,128 @@
+@media only screen and (min-width: 1280px) {
+  .banner-item {
+    height: 600px;
+  }
+  .feature-backgound {
+    height: 412px;
+  }
+  .feature-provided {
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .banner-item {
+    height: 560px;
+  }
+  .feature-backgound {
+    height: 412px;
+  }
+  .feature-provided {
+    height: 550px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .banner-item {
+    height: 400px;
+  }
+  .feature-backgound {
+    height: 300px;
+  }
+  .feature-provided {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner-item {
+    height: 300px;
+  }
+  .feature-backgound {
+    height: 300px;
+  }
+  .feature-provided {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .banner-item {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+  }
+  .feature-backgound {
+    height: 250px;
+  }
+  .feature-provided {
+    height: 250px;
+  }
+  .feature-provided div {
+    margin-top: 30px !important;
+  }
+}
+.banner-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.feature-backgound {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.feature-provided {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+.banner-gradient-background::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to left,
+    hsl(0, 0%, 30%) 0%,
+    hsla(0, 0%, 15%, 0.5) 15.3%,
+    hsla(0, 0%, 10%, 0.5) 23.4%,
+    hsla(0, 0%, 4%, 0.5) 31.6%,
+    hsla(0, 0%, 2%, 0.5) 39.9%,
+    hsla(0, 0%, 1%, 0.5) 48.2%,
+    hsla(0, 0%, 0%, 0.5) 56.2%,
+    hsla(0, 0%, 0%, 0.5) 64%,
+    hsla(0, 0%, 0%, 0.5) 100%
+  ) !important;
+}
+
+@media only screen and (min-width: 1280px) {
+  .banner-slider-item {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .banner-slider-item {
+    height: 290px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .banner-slider-item {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner-slider-item {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .banner-slider-item {
+    height: 120px;
+    width: 100%;
+  }
+}
+.banner-slider-item {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}

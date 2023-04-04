@@ -1,0 +1,13 @@
+{
+  "hostIdentity": "https://sit.license.hicas.vn",
+  "hostPkm": "https://sit.api.hicas.vn",
+  "hostHCFG": "https://sit.api.hicas.vn",
+  "hostINV": "https://sit.api.hicas.vn",
+  "hostPRF": "https://sit.api.hicas.vn",
+  "hostRSVN": "https://sit.api.hicas.vn",
+  "hostCashier": "https://sit.api.hicas.vn",
+  "hostHSKP": "https://sit.api.hicas.vn",
+  "hostHls": "https://sit.api.hicas.vn",
+  "hostPrint": "https://sit.api.hicas.vn/channelserv",
+  "hostImage": "https://autodoc.tingconnect.vn"
+}

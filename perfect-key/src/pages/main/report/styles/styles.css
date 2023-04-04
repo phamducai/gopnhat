@@ -1,0 +1,10 @@
+.more-items:after {
+	content: '\22EE';
+	position: absolute;
+	left: 95%;
+	color: black;
+	font-size: 14px;
+}
+.focus-grey:active {
+	background-color: #e7e7e7;
+}

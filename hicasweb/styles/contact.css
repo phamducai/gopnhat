@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) {
+  .title-contact {
+    font-size: 64px;
+    line-height: 75px;
+    max-width: 800px;
+  }
+  .width-row {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .title-contact {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .width-row {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .title-contact {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .width-row {
+    width: 95%;
+  }
+}
+.width-button-submit button {
+  width: 135px;
+}

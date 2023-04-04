@@ -1,0 +1,37 @@
+stages:
+    - build
+    - deploy
+stages:
+    - build
+    - deploy
+build:
+  stage: build
+
+  script:
+    - echo "Run build PKM"
+    - echo $PWD
+    - CI=false npm install
+    - CI=false npm run build
+  tags:
+    - build
+    
+Dev_PKM:
+  stage: deploy
+
+  script:
+    - echo "Run build PKM"
+    - cd /home/Production/perfect-key/
+    - echo $PWD
+    - git checkout dev
+    - git reset --hard HEAD
+    - git fetch
+    - git pull
+    - CI=false npm install
+    - CI=false npm run build
+  tags:
+    - deploy
+  only:
+    - dev
+    
+
+

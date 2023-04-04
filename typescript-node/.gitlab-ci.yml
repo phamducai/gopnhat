@@ -1,0 +1,13 @@
+stages:
+  - deployt
+main:
+  stage: deployt
+  script:
+    - echo "Run deploy11"
+    - echo "Run 1"
+    - cd '/home/ubuntu/typescript-node/'
+    - git pull
+  tags: 
+    - deployt
+  only: 
+    - main

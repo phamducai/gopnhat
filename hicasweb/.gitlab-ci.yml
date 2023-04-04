@@ -1,0 +1,23 @@
+stages:
+  - build  
+  - deploy
+build:
+  stage: build
+  script:
+    - DOCKER_REGISTRY=$docker_registry docker-compose build
+  tags: 
+    - build
+deploy:
+  stage: deploy
+  script:
+    - echo "Run deploy"
+    - cd /home/ubuntu/hicasweb/
+    - echo "Run 1"
+    - git pull
+    - git checkout client
+    - DOCKER_REGISTRY=$docker_registry docker-compose up --build -d
+  tags: 
+    - deploy
+  only: 
+    - client
+

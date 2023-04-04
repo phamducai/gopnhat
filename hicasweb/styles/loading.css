@@ -1,0 +1,44 @@
+.loading {
+  z-index: 1300;
+  background-color: rgba(255, 255, 255, 1);
+}
+.loading > div {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: var(--orange);
+  animation-fill-mode: both;
+  animation-name: bounce-delay;
+  animation-duration: 1.4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  margin: 0 16;
+}
+@keyframes bounce-delay {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.animationDelay1 {
+  animation-delay: -0.48s;
+}
+.animationDelay2 {
+  animation-delay: -0.32s;
+}
+.animationDelay3 {
+  animation-delay: -0.16s;
+}
+.full {
+  width: 100vw;
+  height: 100vh;
+}
